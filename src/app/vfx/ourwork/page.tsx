@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
-import PosterShowcase from '@/components/PosterShowcase'
-import ProjectList from '@/components/ProjectList';
+import PosterShowcase from '@/components/vfx/ourwork/PosterShowcase'
+import ProjectList from '@/components/vfx/ourwork/ProjectList';
 
 
 const OurWork = () => {
@@ -41,17 +41,17 @@ const OurWork = () => {
             {/*SUBTITLE */}
             <div className="flex flex-col py-section px-container">
                 <div className="inline-flex flex-col justify-center">
-                    <h1 className="vfx-text-title headline-2">We’ve helped shape visual <br/>
+                    <h1 className="vfx-text-title headline-2">We've helped shape visual <br/>
                     storytelling by crafting <br/>
                     groundbreaking VFX experiences.</h1>
                 </div>
             </div>
-            {/* PROJECT LIST */}
+            {/* POSTER SHOWCASE */}
             <div className="flex flex-col pb-10">
                 <PosterShowcase/>
             </div>
             {/* JUDUL */}
-            <div className="flex py-section justify-center items-center self-stretch gap-[10px]">
+            <div className="flex py-section justify-center items-center self-stretch gap-2.5">
                 <h1 className="vfx-text-title text-center headline-1 uppercase">ALL PROJECT</h1>
             </div>   
             {/* PROJECT LIST */}
