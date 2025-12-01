@@ -4,18 +4,18 @@ import React, { useEffect, useState } from "react";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { DevlogInteractivesApi } from "@/lib/api/interactive/devlogApi";
-import { DevlogInteractives } from "@/types/api/devlog";
+import { AnnouncementInteractiveApi } from "@/lib/api";
+import { AnnouncementInteractive } from "@/types/api/types";
 import "./DevlogSlider.css"
 import Image from "next/image";
 
 export default function InteractiveDevlog() {
-  const [devlogs, setDevlogs] = useState<DevlogInteractives[]>([]);
+  const [devlogs, setDevlogs] = useState<AnnouncementInteractive[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await DevlogInteractivesApi.getDevlogs();
+        const data = await AnnouncementInteractiveApi.getDevlog({ limit: 3, sort: "desc" });
         setDevlogs(data);
       } catch (err) {
         console.error("Failed to fetch works:", err);
@@ -92,7 +92,7 @@ export default function InteractiveDevlog() {
     <div className="devlog-slider-wrapper w-full mx-auto pb-section px-container">
       <Slider {...sliderSettings}>
         {devlogs.map((item) => (
-         <div key={item.id} className="px-4">
+         <div key={item.id} onClick={() => window.open(item.urlMedia, "_blank", "noopener,noreferrer")} className="px-4 cursor-pointer">
             <div className="w-full max-w-[384px] mx-auto">
               <div className="bg-[#5E5E5E] overflow-hidden shadow-2xl flex flex-col transition-transform duration-300 hover:scale-[1.02] hover:shadow-3xl">                
                 <div className="relative w-full aspect-video shrink-0 overflow-hidden">

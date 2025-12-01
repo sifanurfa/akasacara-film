@@ -66,10 +66,16 @@ export const AnnouncementInteractiveApi = {
       return { ...item, image: fullUrl, date: formattedDate };
     });
   },
-  getDevlog: async () => {
+  getDevlog: async (options?: { limit?: number; sort?: "asc" | "desc" }) => {
     const res = await apiClient.get("/announcement-interactives?populate=media&filters[announceType]=devlog");
 
-    return res.data.data.map((item: AnnouncementInteractive) => {
+    interface ArticleWithRawDate extends AnnouncementInteractive {
+      image: string;
+      date: string;
+      rawDate: string;
+    }
+
+    let data: ArticleWithRawDate[] = res.data.data.map((item: AnnouncementInteractive) => {
       const url = item.media?.[0]?.url || "";
       const fullUrl = url.startsWith("http")
         ? url
@@ -85,6 +91,22 @@ export const AnnouncementInteractiveApi = {
 
       return { ...item, image: fullUrl, date: formattedDate };
     });
+
+    // Urutkan data kalau parameter sort ada
+    if (options?.sort) {
+      data = data.sort((a, b) => {
+        const dateA = new Date(a.date).getTime();
+        const dateB = new Date(b.date).getTime();
+        return options.sort === "desc" ? dateB - dateA : dateA - dateB;
+      });
+    }
+
+    // Batasi jumlah data kalau parameter limit ada
+    if (options?.limit) {
+      data = data.slice(0, options.limit);
+    }
+
+    return data;
   },
   getVideos: async (options?: { limit?: number; sort?: "asc" | "desc" }) => {
     const res = await apiClient.get("/announcement-interactives?populate=media&filters[announceType]=videos");
