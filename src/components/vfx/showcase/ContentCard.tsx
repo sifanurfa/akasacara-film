@@ -11,10 +11,9 @@ type AnnouncementCardProps = {
   description: string;
   link: string;
   image: string;
-  setTrailerUrl: React.Dispatch<React.SetStateAction<string | null>>;
 };
 
-function ContentCard({ title, description, image, link, setTrailerUrl }: AnnouncementCardProps) {
+function ContentCard({ title, description, image, link }: AnnouncementCardProps) {
   const cursorRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -51,27 +50,13 @@ function ContentCard({ title, description, image, link, setTrailerUrl }: Announc
     };
   }, []);
 
-  // 🎬 Extract YouTube video ID
-  const extractYouTubeId = (url: string): string | null => {
-    const regex =
-      /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
-    const match = url?.match(regex);
-    return match ? match[1] : null;
-  };
-
-  // ▶️ Handle click → buka modal YouTube embed
+  // Handle click buka link eksternal
   const handleClick = () => {
     if (!link) {
       alert("Video belum tersedia.");
       return;
-    }
-
-    const videoId = extractYouTubeId(link);
-    if (videoId) {
-      setTrailerUrl(`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`);
     } else {
-      // fallback link biasa (non-YouTube)
-      setTrailerUrl(link);
+      window.open(link, "_blank", "noopener,noreferrer");
     }
   };
 
