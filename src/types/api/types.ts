@@ -130,6 +130,8 @@ export interface AnnouncementInteractive {
   title: string;
   image: string;
   announceType: string;
+  genre: string;
+  genreList: string[];
   item: string;
   date: string;
   media: Media[];

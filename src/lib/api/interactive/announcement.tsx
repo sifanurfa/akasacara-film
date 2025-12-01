@@ -151,7 +151,9 @@ export const AnnouncementInteractiveApi = {
           })
         : "";
 
-      return { ...item, image: fullUrl, date: formattedDate };
+      const genre = item.genre.split(", ");
+
+      return { ...item, image: fullUrl, date: formattedDate, genreList: genre };
     });
 
     // Urutkan data kalau parameter sort ada
