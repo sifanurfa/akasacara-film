@@ -31,7 +31,7 @@ export default function Page() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const data = await VideoApi.getAll({ limit:8 });
+            const data = await VideoApi.getAll({ limit:6 });
             setVideo(data);
           } catch (err) {
             console.error("Failed to fetch works:", err);
@@ -112,7 +112,7 @@ export default function Page() {
             <div className="flex flex-col py-section px-container items-start gap-3xl self-stretch">
                 <div className="headline-1 text-akasacara-yellow self-stretch">Video / Ads Projects</div>
                 <div className="flex flex-col items-start gap-l self-stretch">
-                    <div className="grid grid-cols-4 content-start gap-l self-stretch">
+                    <div className="grid grid-cols-3 content-start gap-l self-stretch">
                         {video.map((item) => (
                             <VideoCard
                                 key={item.id}
