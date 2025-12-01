@@ -8,11 +8,12 @@ import { gsap } from "gsap";
 type AnnouncementCardProps = {
   id: number;
   title: string;
-  content: string;
+  description: string;
+  link: string;
   image: string;
 };
 
-function ContentCard({ id, title, content, image }: AnnouncementCardProps) {
+function ContentCard({ title, description, image, link }: AnnouncementCardProps) {
   const cursorRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -49,8 +50,18 @@ function ContentCard({ id, title, content, image }: AnnouncementCardProps) {
     };
   }, []);
 
+  // Handle click buka link eksternal
+  const handleClick = () => {
+    if (!link) {
+      alert("Video belum tersedia.");
+      return;
+    } else {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
-    <div className="flex flex-col justify-center items-start gap-m flex-1 relative">
+    <div onClick={handleClick} className="flex flex-col justify-center items-start gap-m flex-1 relative">
       {/* area gambar */}
       <div ref={cardRef} className="flex-1 w-full relative aspect-video group overflow-hidden">
         <Image
@@ -76,7 +87,7 @@ function ContentCard({ id, title, content, image }: AnnouncementCardProps) {
       <div className="flex flex-col items-start gap-md self-stretch">
         <div className="self-stretch headline-2 vfx-text-title">{title}</div>
         <div className="self-stretch sub-heading-reg vfx-text-subtitle-2">
-          {content}
+          {description}
         </div>
       </div>
     </div>

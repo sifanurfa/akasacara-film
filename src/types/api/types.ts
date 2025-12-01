@@ -19,9 +19,35 @@ export interface InteractiveGame {
   id: number;
   title: string;
   description: string;
+  image: string;
   trailer?: string | null;
   link?: string | null;
   media: Media[];
+  fullImage: string[];
+  backgroundMedia: Media[];
+  backgroundGame: Media[];
+  gameplayMedia: Media[];
+  homepageGame: Media[];
+};
+
+export interface PortofolioGame {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  trailer?: string | null;
+  link?: string | null;
+  rate: number;
+  progres: string;
+  media: Media[];
+  backgroundMedia: Media[];
+  backgroundGame: Media[];
+  gameplayMedia: Media[];
+  homepageGame: Media[];
+  backgroundMediaImage: string;
+  backgroundGameImage: string;
+  gameplayMediaImage: string;
+  homepageGameImage: string;
 };
 
 export interface InteractiveGamePortofolio {
@@ -53,6 +79,58 @@ export interface HighlightAnnouncement {
   urlMedia: string;
   title: string;
   announceType: string;
+  date: string;
+  media: Media[];
+};
+
+export interface Film {
+  id: number;
+  documentId: string;
+  title: string;
+  description: string | null;
+  genre: string | null;
+  link: string | null;
+  image: string;
+  trailer: string | null;
+  awardedFilm: boolean | null;
+  projectType: string | null;
+  year: number | null;
+  media: Media[];
+}
+
+export interface Video {
+  id: number;
+  documentId: string;
+  title: string;
+  description: string;
+  type: string;
+  image: string;
+  year: number;
+  media: Media[];
+}
+
+export interface VFX {
+  id: number;
+  documentId: string;
+  title: string;
+  description: string;
+  link: string;
+  trailer: string;
+  projectType: string;
+  image: string;
+  year: number;
+  media: Media[];
+}
+
+export interface AnnouncementInteractive {
+  id: number;
+  documentId: string;
+  identifier: string;
+  urlMedia: string;
+  title: string;
+  image: string;
+  announceType: string;
+  item: string;
   date: string;
   media: Media[];
 };
