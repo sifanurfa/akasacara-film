@@ -63,7 +63,7 @@ const Home = () => {
           </div>
         </div>
         <PortofolioList />
-        <Link href="/interactive/collection" className="button-main vfx-text-title text-center self-stretch">SEE ALL</Link>
+        <Link href="/collection" className="button-main vfx-text-title text-center self-stretch">SEE ALL</Link>
       </div>
 
       {/* LATEST DEVLOG */}
@@ -75,7 +75,7 @@ const Home = () => {
           </div>
 
           <div className="px-m py-s outline-[3px] outline-offset-[-3px] outline-white flex justify-center items-center cursor-pointer">
-            <Link href="/interactive/devlog" className="button-main vfx-text-title">
+            <Link href="/devlog" className="button-main vfx-text-title">
               See All
             </Link>
           </div>

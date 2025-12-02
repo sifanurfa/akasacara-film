@@ -36,7 +36,7 @@ export default function FilmProjectSection() {
                     ))}
                 </div>
             </div>
-            <Link href="/main/ourworks/film" className="button-main text-akasacara-yellow text-center self-stretch">SEE ALL</Link>
+            <Link href="/ourworks/film" className="button-main text-akasacara-yellow text-center self-stretch">SEE ALL</Link>
         </div>
     )
 }

@@ -136,7 +136,7 @@ function AkasacaraHome() {
         <div className="flex py-section px-container flex-col items-start gap-3xl self-stretch bg-akasacara-yellow">
           <div className="flex items-end justify-between self-stretch">
             <div className="headline-1 aka-text-title self-stretch">OUR <span className="italic">PRESS</span></div>
-            <Link href="/main/announcement" className="flex justify-end items-center gap-m aka-text-title">
+            <Link href="/announcement" className="flex justify-end items-center gap-m aka-text-title">
               <span className="button-main">SEE ALL</span>
               <span className="see-all">&gt;</span>
             </Link>            
@@ -163,7 +163,7 @@ function AkasacaraHome() {
         <div className="flex flex-col p-container justify-center items-start gap-section self-stretch">
           <div className="flex items-end justify-between self-stretch">
             <div className="headline-1 text-akasacara-yellow">OUR <span className="italic">WORKS</span></div>
-            <Link href="/main/ourworks" className="flex justify-end items-center gap-m text-akasacara-yellow">
+            <Link href="/ourworks" className="flex justify-end items-center gap-m text-akasacara-yellow">
               <span className="button-main">SEE ALL</span>
               <span className="see-all">&gt;</span>
             </Link>
