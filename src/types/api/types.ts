@@ -136,3 +136,8 @@ export interface AnnouncementInteractive {
   date: string;
   media: Media[];
 };
+
+export interface Showreel {
+  id: number;
+  media: Media[];
+};

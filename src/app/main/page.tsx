@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AnnouncementFilmApi } from "@/lib/api";
 import { FilmApi } from "@/lib/api";
+import { ShowreelFilmApi } from "@/lib/api";
 import { AnnouncementFilm } from "@/types/api/types";
 import { Film } from "@/types/api/types";
 
@@ -51,6 +52,7 @@ const services = [
 ];
 
 function AkasacaraHome() {
+  const [showreel, setShowreel] = useState<string | null>(null);
   const [press, setPress] = useState<AnnouncementFilm[]>([]);
   const [film, setFilm] = useState<Film[]>([]);
   const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -60,6 +62,18 @@ function AkasacaraHome() {
       try {
         const data = await AnnouncementFilmApi.getHighlight({ limit:3, sort:"desc" });
         setPress(data);
+      } catch (err) {
+        console.error("Failed to fetch works:", err);
+      }
+    };
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const video = await ShowreelFilmApi.getVideo();
+        setShowreel(video);
       } catch (err) {
         console.error("Failed to fetch works:", err);
       }
@@ -82,16 +96,20 @@ function AkasacaraHome() {
   return (
     <div className='flex flex-col items-start bg-akasacara'>
         {/* showreel */}
-        <div className={`flex flex-col pb-section items-start self-stretch aspect-video`}>
-            <video 
-            src="/assets/video_vfx.mp4" 
-            autoPlay 
-            loop 
-            muted
-            playsInline 
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            />
-        </div>
+        {showreel && (
+          <div className="relative flex flex-col pb-section items-start self-stretch aspect-video overflow-hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            >
+              <source src={showreel} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        )}
 
         {/* services */}
         <div className="flex flex-col py-section px-container justify-center items-start gap-section self-stretch">

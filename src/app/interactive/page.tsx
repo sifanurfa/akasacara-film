@@ -1,32 +1,53 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import InteractiveDevlog from "@/components/interactive/homepage/DevlogSlider";
 import PortofolioList from "./PortofolioList";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import Image from "next/image";
 import PlatformGame from "@/components/interactive/PlatformGame";
+import { ShowreelInteractiveApi } from "@/lib/api";
 
 const Home = () => {
+  const [showreel, setShowreel] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const video = await ShowreelInteractiveApi.getVideo();
+        setShowreel(video);
+        console.log("Showreel URL:", video);
+      } catch (err) {
+        console.error("Failed to fetch works:", err);
+      }
+    };
+    fetchData();
+  }, []);
+  
   return (
     <div className="relative bg-interactive overflow-hidden">
       {/* SHOWREEL */}
-      <section className="showreel relative w-screen h-screen overflow-hidden">
-        <Image
-          src="/assets/InteractiveShowrell.png"
-          alt="Showreel Background"
-          fill
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        />
-        <div className="absolute top-6 left-6 z-10">
-          <img
-            src="/assets/LogoInteractive.png"
-            alt="Akasacara Film Logo"
-            className="w-64 h-15"
-          />
-        </div>
-      </section>
+      {showreel && (
+        <section className="showreel relative w-screen h-screen overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute top-0 left-0 w-full h-full object-cover"
+          >
+            <source src={showreel} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute top-6 left-6 z-10">
+            <img
+              src="/assets/LogoInteractive.png"
+              alt="Akasacara Film Logo"
+              className="w-64 h-15"
+            />
+          </div>
+        </section>
+      )}
 
       {/* PORTOFOLIO LIST */}
       <div className="w-full px-container py-section flex flex-col justify-center items-center gap-3xl">

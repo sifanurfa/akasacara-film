@@ -42,7 +42,7 @@ export default function InteractiveDevlog() {
         }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 15 20" fill="none">
-          <path d="M13.5 1.5L2.5 9.75L13.5 18" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          <path d="M13.5 1.5L2.5 9.75L13.5 18" stroke="white" strokeWidth="3" strokeLinecap="round"/>
         </svg>
       </button>
     );
@@ -65,7 +65,7 @@ export default function InteractiveDevlog() {
         }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
-          <path d="M1.5 1.5L11.5 9L1.5 16.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          <path d="M1.5 1.5L11.5 9L1.5 16.5" stroke="white" strokeWidth="3" strokeLinecap="round"/>
         </svg>
       </button>
     );
