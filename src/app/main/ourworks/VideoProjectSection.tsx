@@ -37,7 +37,7 @@ export default function VideoProjectSection() {
                     ))}
                 </div>
             </div>
-            <Link href="/ourworks/video" className="button-main text-akasacara-yellow text-center self-stretch">SEE ALL</Link>
+            <Link href="/main/ourworks/video" className="button-main text-akasacara-yellow text-center self-stretch">SEE ALL</Link>
         </div>
     )
 }
