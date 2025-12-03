@@ -105,7 +105,7 @@ function AkasacaraHome() {
           {showreel && (
             <div className="relative flex flex-col pb-section items-start self-stretch aspect-video overflow-hidden">
               <div className="absolute top-6 left-6 z-10">
-                <Image
+                <img
                   src="/assets/LogoAkasacara.png"
                   alt="Akasacara Film Logo"                
                   className="w-64 h-15"
@@ -176,10 +176,10 @@ function AkasacaraHome() {
           <div className="flex flex-col p-container justify-center items-start gap-section self-stretch">
             <div className="flex items-end justify-between self-stretch">
               <div className="headline-1 text-akasacara-yellow">OUR <span className="italic">WORKS</span></div>
-              <div className="flex justify-end items-center gap-m text-akasacara-yellow">
+              <Link href="/main/ourworks" className="flex justify-end items-center gap-m text-akasacara-yellow">
                 <span className="button-main">SEE ALL</span>
                 <span className="see-all">&gt;</span>
-              </div>
+              </Link>
             </div>
             
             <div className="flex flex-col items-start gap-xl self-stretch">
