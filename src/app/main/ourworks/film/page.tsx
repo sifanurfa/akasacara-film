@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import WorkCard from '@/components/film/home/WorkCard';
 import { FilmApi } from "@/lib/api";
 import { Film } from "@/types/api/types";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 function FilmProjects() {
   const [film, setFilm] = useState<Film[]>([]);
@@ -21,6 +23,8 @@ function FilmProjects() {
   }, []);
 
   return (
+    <>
+    <Navbar />
     <div className='flex flex-col items-start bg-akasacara'>
         <div className="flex flex-col p-container justify-center items-start gap-section self-stretch">
           <div className="flex items-end justify-between self-stretch">
@@ -43,6 +47,8 @@ function FilmProjects() {
           </div>
         </div>
     </div>
+    <Footer />
+    </>
   )
 }
 
