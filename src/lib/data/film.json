@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "id": 35,
+      "title": "Tengkorak",
+      "description": "Film ini bercerita tentang penemuan fosil tengkorak raksasa berusia 170 ribu tahun yang memicu kontroversi antara ilmuwan dan pemuka agama, sementara seorang mahasiswi bernama Ani berusaha mengungkap misteri di balik penemuan tersebut yang kemudian mengancam keselamatannya. ",
+      "genre": "Action, Drama, Sci-Fi, Thriller",
+      "link": null,
+      "trailer": "https://youtu.be/8sSVZBENgco?si=-dmCJeS9WZ67SLt5",
+      "awardedFilm": true,
+      "year": "2018",
+      "projectType": "FEATURE FILM",
+      "potraitMedia": "",
+      "awardedMedia": "",
+      "landscapeMedia": ""
+    },
+    {
+      "id": 30,
+      "title": "Bambang",
+      "description": "Film \"Bambang\" (2022) adalah film pendek komedi-drama tentang dua orang, Tomy dan Kemal, yang mencoba menagih utang dari teman mereka, Bambang, setelah Bambang meninggal dunia. Film ini mengeksplorasi dilema moral dan sosial dalam menagih utang, serta kebiasaan masyarakat Indonesia yang merasa canggung atau \"tidak enak\" untuk menagih.",
+      "genre": null,
+      "link": null,
+      "trailer": "https://youtu.be/H4q3PfcVIxQ?si=5HqQCjo3dJPQZonx",
+      "awardedFilm": null,
+      "year": "2022",
+      "projectType": "SHORT FILM",
+      "potraitMedia": "",
+      "awardedMedia": "",
+      "landscapeMedia": ""
+    },
+    {
+      "id": 31,
+      "title": "Darah Nyai",
+      "description": "Film ini menggabungkan genre slasher dengan elemen supernatural, aksi brutal, dan kritik sosial terhadap kekerasan dan penindasan terhadap perempuan, dengan Rara mendapatkan kekuatan supranatural untuk memburu para pelaku, termasuk geng perdagangan manusia. ",
+      "genre": null,
+      "link": null,
+      "trailer": "https://youtu.be/QBhNnkNNBmQ",
+      "awardedFilm": null,
+      "year": "2025",
+      "projectType": "FEATURE FILM",
+      "potraitMedia": "",
+      "awardedMedia": "",
+      "landscapeMedia": ""
+    },
+    {
+      "id": 33,
+      "title": "Pendekar Kesepian",
+      "description": "\"Pendekar Kesepian\" adalah sebuah film pendek tahun 2015 yang bergenre komedi, drama, dan fiksi ilmiah.",
+      "genre": "Komedi, Drama, Fiksi Ilmiah ",
+      "link": null,
+      "trailer": null,
+      "awardedFilm": null,
+      "year": "2015",
+      "projectType": "SHORT FILM",
+      "potraitMedia": "",
+      "awardedMedia": "",
+      "landscapeMedia": ""
+    },
+    {
+      "id": 34,
+      "title": "Setan Alas",
+      "description": "Film ini menceritakan lima mahasiswa yang terjebak di sebuah vila tua yang angker, di mana mereka harus melawan teror yang tampaknya tak terkalahkan, dengan premis yang terinspirasi dari film The Matrix. Secara keseluruhan, film ini merupakan sindiran terhadap klise film horor Indonesia dan sekaligus eksperimen genre yang mencoba menggabungkan horor dengan fiksi ilmiah. ",
+      "genre": null,
+      "link": null,
+      "trailer": "https://youtu.be/Sf2egquU_SE",
+      "awardedFilm": false,
+      "year": "2026",
+      "projectType": "FEATURE FILM",
+      "potraitMedia": "",
+      "awardedMedia": "",
+      "landscapeMedia": ""
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 5
+    }
+  }
+}

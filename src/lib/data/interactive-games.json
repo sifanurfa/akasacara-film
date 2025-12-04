@@ -1,0 +1,187 @@
+{
+  "data": [
+    {
+      "title": "Ganyang Setan Alas! The Game",
+      "description": "Ganyang Setan Alas! The Game is a single-player shooter set in a haunted Indonesian forest, where four students, armed with a range of weapons, must survive relentless zombie attacks and escape a cursed fate.",
+      "link": null,
+      "date": null,
+      "trailer": "https://www.youtube.com/watch?v=oBp6w5n_rBI",
+      "progres": "Coming Soon",
+      "popularGame": true,
+      "rate": 4.5,
+      "type": null,
+      "backgroundMedia": "",
+      "backgroundGame": [
+        {
+          "name": "latar_gsa.png",
+          "alternativeText": null,
+          "caption": null,
+          "width": 1200,
+          "height": 900,
+          "formats": {
+            "large": {
+              "ext": ".png",
+              "url": "/uploads/large_latar_gsa_d3e9ed6a30.png",
+              "hash": "large_latar_gsa_d3e9ed6a30",
+              "mime": "image/png",
+              "name": "large_latar_gsa.png",
+              "path": null,
+              "size": 1675.31,
+              "width": 1000,
+              "height": 750,
+              "sizeInBytes": 1675306
+            },
+            "small": {
+              "ext": ".png",
+              "url": "/uploads/small_latar_gsa_d3e9ed6a30.png",
+              "hash": "small_latar_gsa_d3e9ed6a30",
+              "mime": "image/png",
+              "name": "small_latar_gsa.png",
+              "path": null,
+              "size": 440.69,
+              "width": 500,
+              "height": 375,
+              "sizeInBytes": 440693
+            },
+            "medium": {
+              "ext": ".png",
+              "url": "/uploads/medium_latar_gsa_d3e9ed6a30.png",
+              "hash": "medium_latar_gsa_d3e9ed6a30",
+              "mime": "image/png",
+              "name": "medium_latar_gsa.png",
+              "path": null,
+              "size": 969.6,
+              "width": 750,
+              "height": 563,
+              "sizeInBytes": 969599
+            },
+            "thumbnail": {
+              "ext": ".png",
+              "url": "/uploads/thumbnail_latar_gsa_d3e9ed6a30.png",
+              "hash": "thumbnail_latar_gsa_d3e9ed6a30",
+              "mime": "image/png",
+              "name": "thumbnail_latar_gsa.png",
+              "path": null,
+              "size": 79.6,
+              "width": 208,
+              "height": 156,
+              "sizeInBytes": 79602
+            }
+          },
+          "hash": "latar_gsa_d3e9ed6a30",
+          "ext": ".png",
+          "mime": "image/png",
+          "size": 621.84,
+          "url": "/uploads/latar_gsa_d3e9ed6a30.png",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null
+        }
+      ],
+      "gameplayMedia": "",
+      "homepageGame": [
+        {
+          "id": 50,
+          "documentId": "x6qdkbdk8bzrm1g3yz6t8pd8",
+          "name": "homapage_gsa.png",
+          "alternativeText": null,
+          "caption": null,
+          "width": 1359,
+          "height": 764,
+          "formats": {
+            "large": {
+              "ext": ".png",
+              "url": "/uploads/large_homapage_gsa_df09630f52.png",
+              "hash": "large_homapage_gsa_df09630f52",
+              "mime": "image/png",
+              "name": "large_homapage_gsa.png",
+              "path": null,
+              "size": 993.45,
+              "width": 1000,
+              "height": 562,
+              "sizeInBytes": 993453
+            },
+            "small": {
+              "ext": ".png",
+              "url": "/uploads/small_homapage_gsa_df09630f52.png",
+              "hash": "small_homapage_gsa_df09630f52",
+              "mime": "image/png",
+              "name": "small_homapage_gsa.png",
+              "path": null,
+              "size": 275.87,
+              "width": 500,
+              "height": 281,
+              "sizeInBytes": 275870
+            },
+            "medium": {
+              "ext": ".png",
+              "url": "/uploads/medium_homapage_gsa_df09630f52.png",
+              "hash": "medium_homapage_gsa_df09630f52",
+              "mime": "image/png",
+              "name": "medium_homapage_gsa.png",
+              "path": null,
+              "size": 586.06,
+              "width": 750,
+              "height": 422,
+              "sizeInBytes": 586061
+            },
+            "thumbnail": {
+              "ext": ".png",
+              "url": "/uploads/thumbnail_homapage_gsa_df09630f52.png",
+              "hash": "thumbnail_homapage_gsa_df09630f52",
+              "mime": "image/png",
+              "name": "thumbnail_homapage_gsa.png",
+              "path": null,
+              "size": 75.01,
+              "width": 245,
+              "height": 138,
+              "sizeInBytes": 75005
+            }
+          },
+          "hash": "homapage_gsa_df09630f52",
+          "ext": ".png",
+          "mime": "image/png",
+          "size": 378.29,
+          "url": "/uploads/homapage_gsa_df09630f52.png",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "documentId": "mgp6lz3n2ypzr3m21f7nmb4z",
+      "title": "Becak Race 2045",
+      "description": "virtual reality racing genre game",
+      "link": null,
+      "date": null,
+      "trailer": null,
+      "progres": null,
+      "popularGame": null,
+      "rate": 5,
+      "type": null,
+      "backgroundMedia": "",
+      "backgroundGame": null,
+      "gameplayMedia": "",
+      "homepageGame": null
+    },
+    {
+      "id": 36,
+      "documentId": "lkvlhoumaepzcyk0wan69tqg",
+      "title": "Persia",
+      "description": "3D space battle simulation set in 2052",
+      "link": null,
+      "date": null,
+      "trailer": null,
+      "progres": null,
+      "popularGame": null,
+      "rate": 4.5,
+      "type": null,
+      "backgroundMedia": "",
+      "backgroundGame": null,
+      "gameplayMedia": "",
+      "homepageGame": null
+    }
+  ]
+}
