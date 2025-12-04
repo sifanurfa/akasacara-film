@@ -93,7 +93,7 @@ export default function NewsSection() {
   return (
     <section className="self-stretch py-section flex flex-col items-center gap-2xl">
       {/* MENU */}
-      <div className="flex flex-wrap justify-evenly items-center gap-x-20 gap-y-4 px-container">
+      <div className="flex flex-wrap justify-evenly items-center gap-xl md:gap-2xl lg:gap-x-20 gap-y-4 px-container">
         {tabs.map((tab) => (
           <button
             key={tab}

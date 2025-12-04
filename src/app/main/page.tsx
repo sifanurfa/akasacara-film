@@ -107,13 +107,23 @@ function AkasacaraHome() {
               <video
                 autoPlay
                 loop
+                muted
+                playsInline
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              >
+                <source src="/assets/FilmShowrell.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+              {/* <video
+                autoPlay
+                loop
                 // muted
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover"
               >
                 <source src={showreel} type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             </div>
           )}
 
