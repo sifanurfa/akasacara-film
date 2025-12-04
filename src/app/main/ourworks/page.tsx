@@ -27,8 +27,6 @@ export default function Page() {
             {/* ALL PROJECTS */}
             <AllProjectSection/>
 
-            {/* Footer */}
-            <Footer/>
         </main >
         <Footer />
         </>

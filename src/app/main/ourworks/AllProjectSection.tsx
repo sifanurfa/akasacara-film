@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function AllProjectSection() {
-    const [activeIndex, setActiveIndex] = useState<number | null>(1);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
     const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
     const allProjects: {
