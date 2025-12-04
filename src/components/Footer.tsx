@@ -120,6 +120,19 @@ export default function Footer() {
   // untuk halaman child
   return pathname === href || pathname.startsWith(href + "/");
 };
+
+const isActiveQuickLink = (link: { label: string; href: string }) => {
+    if (link.label === "Home") {
+      if (link.href === "/main") {
+        return pathname === "/" || pathname === "/main";
+      } else {
+        return pathname === link.href;
+      }
+    } else {
+      return pathname === link.href || pathname.startsWith(link.href + "/");
+    }
+  };
+  
   return (
     <div className="bg-black flex flex-col py-section px-container items-start">
       <div className="self-stretch flex items-center">
