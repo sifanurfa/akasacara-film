@@ -9,6 +9,8 @@ import Navbar from "@/components/Navbar";
 
 export default function Page() {
     return (
+        <>
+        <Navbar />
         <main className="min-h-screen bg-black text-white pb-20 font-sans">
             {/* Navbar */}
             <Navbar/>
@@ -28,5 +30,7 @@ export default function Page() {
             {/* Footer */}
             <Footer/>
         </main >
+        <Footer />
+        </>
     );
 }
