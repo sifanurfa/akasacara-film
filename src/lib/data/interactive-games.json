@@ -81,8 +81,6 @@
       "gameplayMedia": "",
       "homepageGame": [
         {
-          "id": 50,
-          "documentId": "x6qdkbdk8bzrm1g3yz6t8pd8",
           "name": "homapage_gsa.png",
           "alternativeText": null,
           "caption": null,
@@ -150,8 +148,6 @@
       ]
     },
     {
-      "id": 35,
-      "documentId": "mgp6lz3n2ypzr3m21f7nmb4z",
       "title": "Becak Race 2045",
       "description": "virtual reality racing genre game",
       "link": null,
@@ -167,8 +163,6 @@
       "homepageGame": null
     },
     {
-      "id": 36,
-      "documentId": "lkvlhoumaepzcyk0wan69tqg",
       "title": "Persia",
       "description": "3D space battle simulation set in 2052",
       "link": null,
